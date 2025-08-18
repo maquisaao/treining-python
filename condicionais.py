@@ -40,3 +40,4 @@ if a2 > b2:
     print("a2 é maior que b2") #executa o primeir verdadeiro
 elif a2 > 0: 
     print("a2 é positivo")
+
