@@ -49,4 +49,8 @@ print(concatenar.find("Silva")) # Saída: -1 (não encontrado)
 print(concatenar2[busca:])  # Saída: Silva Pinheiro (substitui o texto encontrado por "Silva Pinheiro")
 
 # substituição de substring
+<<<<<<< HEAD
 print(concatenar2.replace("Silva", "Wilson")) # substitui "Silva" por "Wilson"
+=======
+print(concatenar2.replace("Silva", "Wilson")) # substitui "Silva" por "Wilson"
+>>>>>>> f9c5835 (metodos de string)
