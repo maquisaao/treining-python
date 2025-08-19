@@ -12,7 +12,7 @@ a = "Max "
 b = "Pinheiro"
 
 concatenar = a + b
-print(concatenar)  # Saída: MaxPinheiro
+print(concatenar)  # Saída: Max Pinheiro
 
 concatenar2 = a + "Silva" + " " + b
 print(concatenar2)  # Saída: Max Silva Pinheiro
@@ -31,3 +31,22 @@ print(concatenar2[2])  # Saída: x
 
 print(concatenar2[4:9]) # Saída: Silva
 
+# metodos de string
+
+print(concatenar2)
+print(concatenar2.lower())  # converte a string para minúsculas
+print(concatenar2.upper())  # converte a string para maiúsculas
+print(concatenar2.strip())  # remove espaços no início e no fim
+
+txt = "Plingua Pdo Pp Pagora Ppode Pser Ptraduzida"
+print(txt.split("P"))  # divide a string em uma lista de palavras
+
+# busca de substring
+print(concatenar2.split()) # divide a string em uma lista de palavras (espaços como delimitadores)
+busca = concatenar2.find("Silva") # busca a substring "Silva" e retorna o índice onde começa
+print(busca)  # Saída: 4 (índice onde "Silva" começa)
+print(concatenar.find("Silva")) # Saída: -1 (não encontrado)  
+print(concatenar2[busca:])  # Saída: Silva Pinheiro (substitui o texto encontrado por "Silva Pinheiro")
+
+# substituição de substring
+print(concatenar2.replace("Silva", "Wilson")) # substitui "Silva" por "Wilson"
