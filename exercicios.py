@@ -1,6 +1,6 @@
 import math
 
-# 1 Faça um programa que receba a idade do usuário e diga se ele é maior ou menor de idade.   
+'''# 1 Faça um programa que receba a idade do usuário e diga se ele é maior ou menor de idade.   
 idade = int(input("Digite sua idade:"))
 if idade < 18:
     print("Menor de idade")
@@ -41,36 +41,48 @@ else:
 lista = [32, 58, 2]
 
 lista.sort()
-print(lista)
+print(lista)'''
 
 # 5 Escreva um programa que receba dois números e um sinal, e faça a operação matemática definida pelo sinal (CALCULADORA)
 
 
-a = int(input(""))
-sinal = input("")
-b = int(input(""))
+print("Bem-vindo a calculadora:")
+menu = input("Entrar (1) ou Sair (2)? ")
+
+while menu == "1":
+    print("Voce inciou a caculadora...")
+    a = int(input("Digite o primeiro valor: "))
+    sinal = input("Digite a operacao(+ , -, * ou /): ")
+    b = int(input("Digite o primeiro valor: "))
 
 
-if sinal == "+":
-    def soma(a,b):
-        resultado = a+b
-        print(resultado)
-    soma(a,b)
-elif sinal == "-":
-    def subtracao(a,b):
-        resultado = a-b
-        print(resultado)
-    subtracao(a,b)
-elif sinal == "*":
-    def multiplicacao(a,b):
-        resultado = a-b
-        print(resultado)
-    multiplicacao(a,b)
-elif sinal == "/":
-    def divisao(a,b):
-        resultado = a-b
-        print(resultado)
-    divisao(a,b)
-else:
-    print("Verifique o sinal e tente de novo.")
+    if sinal == "+":
+        def soma(a,b):
+            resultado = a+b
+            print("Resultado:", resultado)
+        soma(a,b)
+    elif sinal == "-":
+        def subtracao(a,b):
+            resultado = a-b
+            print("Resultado:", resultado)
+        subtracao(a,b)
+    elif sinal == "*":
+        def multiplicacao(a,b):
+            resultado = a*b
+            print(resultado)
+        multiplicacao(a,b)
+    elif sinal == "/":
+        def divisao(a,b):
+            resultado = a/b
+            print(resultado)
+        divisao(a,b)
+    else:
+        print("Verifique o sinal e tente de novo.")
 
+    repete=input("Usar novamente? Sim(1) Nao(2) ")
+    if repete == "1":
+        menu = "1"
+    else:
+        menu="2"
+
+print("Voce saiu da calculadora.")
