@@ -1,0 +1,15 @@
+{
+    "javascript.suggest.enabled": false,
+    "typescript.suggest.enabled": false,
+    "editor.suggestOnTriggerCharacters": false,
+    "editor.quickSuggestions": {
+        "other": "off"
+    },
+    "editor.suggest.selectionMode": "never",
+    "editor.inlineSuggest.edits.allowCodeShifting": "never",
+    "editor.inlineSuggest.edits.renderSideBySide": "never",
+    "editor.inlineSuggest.enabled": false,
+    "editor.inlineSuggest.syntaxHighlightingEnabled": false,
+    "editor.quickSuggestionsDelay": 99999,
+    "editor.snippetSuggestions": "none"
+}
