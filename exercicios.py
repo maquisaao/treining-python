@@ -56,26 +56,24 @@ while menu == "1":
     b = int(input("Digite o primeiro valor: "))
 
 
+    def soma(a,b):
+        return a+b
+    def subtracao(a,b):
+        return a-b
+    def multiplicacao(a,b):
+        return a*b
+    def divisao(a,b):
+        return a/b
+    
+
     if sinal == "+":
-        def soma(a,b):
-            resultado = a+b
-            print("Resultado:", resultado)
-        soma(a,b)
+        print("Resultado:", soma(a,b))
     elif sinal == "-":
-        def subtracao(a,b):
-            resultado = a-b
-            print("Resultado:", resultado)
-        subtracao(a,b)
+        print(subtracao(a,b))
     elif sinal == "*":
-        def multiplicacao(a,b):
-            resultado = a*b
-            print(resultado)
-        multiplicacao(a,b)
+        print(multiplicacao(a,b))
     elif sinal == "/":
-        def divisao(a,b):
-            resultado = a/b
-            print(resultado)
-        divisao(a,b)
+        print(divisao(a,b))
     else:
         print("Verifique o sinal e tente de novo.")
 
