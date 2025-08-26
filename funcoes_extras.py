@@ -18,4 +18,12 @@ print(y3)
 y4 = [i for i in x if i%2==1] # retorna os impares da lista x
 print(y4)
 
-# 
+# FUNCAO ENUMERATE
+
+lista = ["abacate", "bola", "cachorro"]
+for i in range(len(lista)): # metodo 'simples' chamar os indices e os itens
+    print(i, lista[i])
+
+for i, nome in enumerate(lista): # usando enumerate
+    print(i,nome)
+
