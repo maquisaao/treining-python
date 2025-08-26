@@ -27,3 +27,19 @@ for i in range(len(lista)): # metodo 'simples' chamar os indices e os itens
 for i, nome in enumerate(lista): # usando enumerate
     print(i,nome)
 
+# FUNCAO MAP
+
+def dobro(x):
+    return x*2
+
+valor = [1, 2, 3, 4, 5]
+print (dobro(valor)) # dessa maneira vai acabar duplicando a lista ao invés de dobrar os valores
+
+# map(funcao, lista)
+
+valor_dobrado = map(dobro, valor)
+print(valor_dobrado) # printa em formato de objeto 'map' 
+
+valor_dobrado = list(valor_dobrado) # converte em lista ( list )
+print(valor_dobrado)
+
