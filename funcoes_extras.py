@@ -43,3 +43,14 @@ print(valor_dobrado) # printa em formato de objeto 'map'
 valor_dobrado = list(valor_dobrado) # converte em lista ( list )
 print(valor_dobrado)
 
+# FUNCAO REDUCE - reduce(funçao, lista)
+
+from functools import reduce # importar antes de usar 
+
+def soma(x,y): # esse função vai somar apenas 2 numeros
+    return x+y
+
+lista = [1, 3, 5, 10, 20]
+soma = reduce(soma, lista) # usando reduce consigo somar todos os valores dentro da lista
+print(soma)
+
