@@ -54,3 +54,11 @@ lista = [1, 3, 5, 10, 20]
 soma = reduce(soma, lista) # usando reduce consigo somar todos os valores dentro da lista
 print(soma)
 
+# FUNCAO ZIP - concatenar listas
+
+lista1 = [1, 2, 3, 4, 5]
+lista2 = ["abacate", "bola", "cachorro", "dinheiro", "elefante"]
+lista3 = ["fruta", "objeto", "animal", "objeto", "animal"]
+
+for numero, nome, categoria in zip(lista1, lista2, lista3):
+    print(numero, nome, categoria)
